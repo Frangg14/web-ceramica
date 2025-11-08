@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
     <title>Cursos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="img/isologo-taller.png" alt="Logo de el taller">
+            <a href="index.html"><img src="img/isologo-taller.png" alt="Logo de el taller"></a>
             <h1>el taller</h1>
-        </header>
-        <nav>
+            <nav>
             <ul>
                 <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
                 <li class="pag-actual">CURSOS</li>
                 <li><a href="inscripcion-cursos.html">INSCRIPCIÓN</a></li>
             </ul>
         </nav>
+        </header>
     </div>
 
     <div class="cursos-ceramica">
-        <p>Cursos de cerámica</p>
-        <p>2023</p>
+        <p class="titulo">Cursos de cerámica</p>
+        <p class="fecha">2023</p>
         <figure>
             <img src="img/cursos-ceramica.jpg" alt="Curos de cerámica">
             <figcaption><small>&copy; Foto de <a href="https://unsplash.com/@courtneymcook">Courtney Cook</a> en <a href="https://unsplash.com/es/fotos/jZLozXwxgbo">Unsplash</a></small></figcaption>
         </figure>
-        <p>Cursos de cerámica para todos los niveles. Artesanos expertos te guiarán para que aprendas el oficio y des rienda suelta
+        <p class="descripcion">Cursos de cerámica para todos los niveles. Artesanos expertos te guiarán para que aprendas el oficio y des rienda suelta
         a tu creatividad.</p>
     </div>
 
-    <table>
+    <table class="cursos-ceramica">
         <caption>Programación de cursos</caption>
         <thead>
             <tr>
@@ -76,16 +78,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="4"><small>Plazas limitadas a 15 alumnos por sesión</small></td>
+                <td colspan="4" class="nota"><small>Plazas limitadas a 15 alumnos por sesión</small></td>
             </tr>
         </tfoot>
     </table>
 
     <footer class="container">
         <ul class="nav-footer">
-            <li>Aviso legal</li>
-            <li>Política de privacidad</li>
-            <li>Política de cookies</li>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
         </ul>
         <p><small>2025 &copy; Francisco Ganga Gras</small></p>
     </footer>
