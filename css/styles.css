@@ -95,7 +95,7 @@ footer.container > p{
     text-align: center;
 }
 .container-index > nav, .container-index > header {
-    padding-bottom: 120px;
+    padding-bottom: 110px;
 }
 .container-index > footer {
     padding-top: 50px;
@@ -232,9 +232,184 @@ dd {
 .pie-main a:hover {
     color: #6BDEC8;
 }
+
 /*inscripcion-cursos.html*/
 .inscripcion {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
+
+.inscripcion > h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+.inscripcion a {
+    color: #942C0B;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.inscripcion a:hover {
+    color: #6BDEC8;
+}
+
+fieldset{
+    padding: 20px;
+    margin: 0;
+}
+
+.fila{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.detaller label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.detalles input, .detalles select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    padding: 7px;
+}
+
+.detalles select{
+    height: 36px;
+}
+
+.detalles {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr; /* Divide el formulario en dos columnas iguales */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 30px;
+}
+
+label{
+    padding-top: 15px;
+}
+
+.actions > button[type="submit"]{ 
+    background-color: #942C0B;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+    /* Fieldsets como paneles con borde y leyenda */
+    fieldset {
+        border: 2px solid #222;
+        padding: 18px;
+        margin: 0 0 24px 0;
+    }
+    legend {
+        font-weight: 700;
+        padding: 0 10px;
+        margin-left: 8px;
+    }
+
+    /* Grid para el contenido del fieldset con dos columnas */
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+        gap: 14px 22px; /* filas y columnas */
+        align-items: start;
+    }
+
+    /* Etiqueta y control (etiqueta encima del input) */
+    label {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .form-row { margin-bottom: 12px; } /* pequeño espaciado entre filas internas */
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 9px 10px;
+        border: 1px solid #999;
+        border-radius: 2px;
+        background: #fff;
+        font-size: 0.95rem;
+    }
+
+    /* Inputs pequeños alineados con el calendar icon (date nativo) */
+    input[type="date"] {
+        padding: 8px 10px;
+    }
+
+    /* Forzar select a mostrar como control ancho */
+    select { appearance: auto; }
+
+    /* Para que algunos elementos ocupen las dos columnas */
+    .full { grid-column: 1 / -1; } /* ocupa todo el ancho del grid */
+
+    /* Caja para radios (como en la imagen: recuadro alrededor) */
+    .radio-box {
+        border: 1px solid #aaa;
+        padding: 12px;
+        border-radius: 2px;
+        background: #fafafa;
+    }
+
+    /* Radios y etiquetas dentro, los apilamos verticalmente */
+    .radio-list label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 400;
+    }
+
+    /* Textarea con tamaño similar al mockup */
+    textarea {
+        min-height: 140px;
+        resize: vertical;
+    }
+
+    /* Grupo de botones (enviar, reset) */
+    .actions {
+        display:flex;
+        gap:12px;
+        justify-content:flex-start;
+        margin-top:6px;
+    }
+
+    button[type="submit"],
+    button[type="reset"] {
+        background:#222;
+        color:#fff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 3px;
+        cursor:pointer;
+        font-weight:600;
+    }
+    button[type="reset"] { background:#666; }
+
+    /* Leyenda de campo obligatorio */
+    .required { color:#000; }
+    .asterisk { color:#d00; margin-left:4px; }
+
+    /* Estilo del checkbox de políticas */
+    .policies { display:flex; align-items:center; gap:8px; margin-top:6px; }
