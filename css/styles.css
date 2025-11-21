@@ -284,7 +284,7 @@ fieldset{
 }
 
 input[type="date"] {
-    padding: 7px;
+    padding: 5px;
 }
 
 .detalles select{
@@ -314,7 +314,7 @@ label{
 
     /* Fieldsets como paneles con borde y leyenda */
     fieldset {
-        border: 2px solid #222;
+        border: 2px solid #000000;
         padding: 18px;
         margin: 0 0 24px 0;
     }
@@ -339,7 +339,7 @@ label{
         margin-bottom: 6px;
     }
 
-    .form-row { margin-bottom: 12px; } /* pequeño espaciado entre filas internas */
+    .form-row { margin-bottom: 10px; } /* pequeño espaciado entre filas internas */
 
     input[type="text"],
     input[type="email"],
@@ -348,10 +348,10 @@ label{
     select,
     textarea {
         width: 100%;
-        padding: 9px 10px;
-        border: 1px solid #999;
+        padding: 9px 5px;
+        border: 1px solid #000000;
         border-radius: 2px;
-        background: #fff;
+        background: #FFFFFF;
         font-size: 0.95rem;
     }
 
@@ -360,15 +360,12 @@ label{
         padding: 8px 10px;
     }
 
-    /* Forzar select a mostrar como control ancho */
-    select { appearance: auto; }
-
     /* Para que algunos elementos ocupen las dos columnas */
     .full { grid-column: 1 / -1; } /* ocupa todo el ancho del grid */
 
     /* Caja para radios (como en la imagen: recuadro alrededor) */
     .radio-box {
-        border: 1px solid #aaa;
+        border: 1px solid #000000;
         padding: 12px;
         border-radius: 2px;
         background: #fafafa;
@@ -387,29 +384,23 @@ label{
         resize: vertical;
     }
 
-    /* Grupo de botones (enviar, reset) */
-    .actions {
-        display:flex;
-        gap:12px;
-        justify-content:flex-start;
-        margin-top:6px;
+    .actions > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
-    button[type="submit"],
-    button[type="reset"] {
-        background:#222;
-        color:#fff;
+    .checkbox-label {
+        display: inline-block; 
+        vertical-align: top; 
+        margin-left: 5px;
+    }
+
+    button[type="submit"] {
+        background:#942C0B;
+        color:#FFFFFF;
         border: none;
         padding: 10px 14px;
         border-radius: 3px;
-        cursor:pointer;
         font-weight:600;
     }
-    button[type="reset"] { background:#666; }
-
-    /* Leyenda de campo obligatorio */
-    .required { color:#000; }
-    .asterisk { color:#d00; margin-left:4px; }
-
-    /* Estilo del checkbox de políticas */
-    .policies { display:flex; align-items:center; gap:8px; margin-top:6px; }

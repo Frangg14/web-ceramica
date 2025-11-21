@@ -28,46 +28,46 @@
         <p><small>Los campos señalados con * son obligatorios</small></p>
         <form action="#" method="post">
             <fieldset>
-    <legend>Detalles de la inscripción</legend>
+                <legend>Detalles de la inscripción</legend>
 
-    <div class="grid-2">
-        <div class="form-row">
-            <label for="nombre">Nombre <span class="asterisk">*</span></label>
-            <input id="nombre" name="nombre" type="text" required maxlength="64" />
-        </div>
+                <div class="grid-2">
+                    <div class="form-row">
+                        <label for="nombre">Nombre *</label>
+                        <input id="nombre" name="nombre" type="text" required maxlength="64" />
+                    </div>
 
-        <div class="form-row">
-            <label for="apellidos">Apellidos <span class="asterisk">*</span></label>
-            <input id="apellidos" name="apellidos" type="text" required maxlength="128" />
-        </div>
+                    <div class="form-row">
+                        <label for="apellidos">Apellidos *</label>
+                        <input id="apellidos" name="apellidos" type="text" required maxlength="128" />
+                    </div>
 
-        <div class="form-row">
-            <label for="email">Correo electrónico <span class="asterisk">*</span></label>
-            <input id="email" name="email" type="email" required />
-        </div>
+                    <div class="form-row">
+                        <label for="email">Correo electrónico *</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
 
-        <div class="form-row">
-            <label for="telefono">Teléfono <span class="asterisk">*</span></label>
-            <input id="telefono" name="telefono" type="tel" required />
-        </div>
+                    <div class="form-row">
+                        <label for="telefono">Teléfono *</label>
+                        <input id="telefono" name="telefono" type="tel" required />
+                    </div>
 
-        <div class="form-row">
-            <label for="fecha-nac">Fecha de nacimiento <span class="asterisk">*</span></label>
-            <input id="fecha-nac" name="fecha-nac" type="date" required />
-        </div>
+                    <div class="form-row">
+                        <label for="fecha-nac">Fecha de nacimiento *</label>
+                        <input id="fecha-nac" name="fecha-nac" type="date" required />
+                    </div>
 
-        <div class="form-row">
-            <label for="curso">Curso <span class="asterisk">*</span></label>
-            <select id="curso" name="curso" required>
-            <option value="">Selecciona el curso</option>
-            <option value="torno">Torno</option>
-            <option value="ceramica">Cerámica</option>
-            <option value="modelado">Modelado</option>
-            <option value="joyeria">Joyería cerámica</option>
-            </select>
-        </div>
-        </div>
-    </fieldset>
+                    <div class="form-row">
+                        <label for="curso">Curso *</label>
+                        <select id="curso" name="curso" required>
+                        <option value="">Selecciona el curso</option>
+                        <option value="torno">Torno</option>
+                        <option value="ceramica">Cerámica</option>
+                        <option value="modelado">Modelado</option>
+                        <option value="joyeria">Joyería cerámica</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
 
     <!-- OTRAS INFORMACIONES -->
     <fieldset>
@@ -76,7 +76,7 @@
     <div class="grid-2">
         <!-- Pregunta radio con caja -->
         <div class="form-row full">
-            <label>¿Has hecho otros cursos con nosotros? <span class="asterisk">*</span></label>
+            <label>¿Has hecho otros cursos con nosotros? *</label>
             <div class="radio-box">
             <div class="radio-list">
                 <label><input type="radio" name="previos" value="si" required> Sí</label>
@@ -96,7 +96,7 @@
 
     <!-- METODO DE PAGO -->
     <fieldset>
-        <legend>Elige un método de pago <span class="asterisk">*</span></legend>
+        <legend>Elige un método de pago *</legend>
 
         <div class="grid-2">
         <div class="form-row full">
@@ -122,8 +122,10 @@
                 Adicional</strong>: Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>. 
             </p>
         <input type="checkbox" name="privacidad" id="privacidad" required>
-        <label for="privacidad">He leído y acepto la <a href="#">política de privacidad</a> *</label>
-        <button type="submit">INSCRÍBEME</button>
+        <label for="privacidad" class="checkbox-label">He leído y acepto la <a href="#">política de privacidad</a> *</label>
+        <ul>
+            <li><button type="submit">INSCRÍBEME</button></li>
+        </ul>
     </div>    
     </form>
     </main>
